@@ -112,7 +112,7 @@ class Module extends \yii\base\Module implements \yii\base\BootstrapInterface
      *
      * @var int
      */
-    public $defaultQuality = 90;
+    public $defaultQuality = 70;
 
     /**
      * @inheritdoc
