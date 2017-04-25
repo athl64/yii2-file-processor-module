@@ -8,6 +8,7 @@ use metalguardian\fileProcessor\helpers\FPM;
 use metalguardian\fileProcessor\Module;
 use yii\base\InvalidConfigException;
 use yii\helpers\FileHelper;
+use yii\helpers\ArrayHelper;
 use yii\web\NotFoundHttpException;
 
 /**
