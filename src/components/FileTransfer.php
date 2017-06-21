@@ -51,7 +51,9 @@ class FileTransfer extends Component
     {
         $model = new File();
         $model->extension = $file->getExtension();
-        $model->base_name = FPM::normalizeFileName($file->getBaseName());
+        $model->base_name = FPM::m()->transliterateFileNames
+            ? FPM::normalizeFileName($file->getBaseName())
+            : $file->getBaseName();;
         $model->save(false);
 
         return $model;

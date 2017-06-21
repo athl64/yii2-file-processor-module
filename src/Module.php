@@ -115,6 +115,13 @@ class Module extends \yii\base\Module implements \yii\base\BootstrapInterface
     public $defaultQuality = 70;
 
     /**
+     * Enable transliterating file name while saving uploaded file
+     *
+     * @var bool
+     */
+    public $transliterateFileNames = true;
+
+    /**
      * @inheritdoc
      */
     public function init()
