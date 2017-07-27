@@ -29,7 +29,7 @@ class ThumbnailCache extends \yii\base\Component
         foreach ($config as $moduleKey => $module) {
             foreach ($module as $sizeKey => $size) {
                 $fileName = FPM::getThumbnailDirectory($id, $moduleKey, $sizeKey)
-                    . FPM::getThumbnailFileName($id, $model->base_name, $model->extension);
+                    . DIRECTORY_SEPARATOR . FPM::getThumbnailFileName($id, $model->base_name, $model->extension);
 
                 if (is_file($fileName)) {
                     unlink($fileName);
